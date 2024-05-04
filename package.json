@@ -4,17 +4,14 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "ng": "ng",
-    "start": "ionic serve",
-    "build": "ng build",
+    "start": "ionic serve --watch --configuration=development",
+    "build": "ng build --configuration=development --aot=true --base-href=http://localhost:3000 --delete-output-path=true --named-chunks=true --optimization=true --progress=true --verbose=true",
+    "generate-environments": "ng generate environments",
+    "start-prod": "ionic serve --watch --configuration=production",
+    "build-prod": "ng build --configuration=production --aot=true --base-href=http://localhost:3000 --delete-output-path=true --named-chunks=true --optimization=true --progress=true --verbose=true",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint",
-    "generate-environments": "ng generate environments",
-    "start-dev": "ionic serve --watch --configuration=development",
-    "build-dev": "ng build --configuration=development --aot=true --base-href=http://localhost:3000 --delete-output-path=true --named-chunks=true --optimization=true --progress=true --verbose=true",
-    "start-prod": "ionic serve --watch --configuration=production",
-    "build-prod": "ng build --configuration=production --aot=true --base-href=http://localhost:3000 --delete-output-path=true --named-chunks=true --optimization=true --progress=true --verbose=true"
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
