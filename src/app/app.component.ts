@@ -23,11 +23,9 @@ export class AppComponent {
     { title: 'Spam', url: '/folder/spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  public apiBaseUrl = ''
+  public environmentName = ''
   constructor() {
-    console.log('environment', environment)
-    // console.log(environment.production)
-    // this.apiBaseUrl = environment.apiBaseUrl
+    this.environmentName = environment.environmentName.toUpperCase()
     addIcons({ mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp });
   }
 }
