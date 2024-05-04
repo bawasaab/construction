@@ -9,7 +9,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "generate-environments": "ng generate environments",
+    "start-dev": "ionic serve --watch --configuration=development",
+    "build-dev": "ng build --configuration=development --aot=true --base-href=http://localhost:3000 --delete-output-path=true --named-chunks=true --optimization=true --progress=true --verbose=true",
+    "start-prod": "ionic serve --watch --configuration=production",
+    "build-prod": "ng build --configuration=production --aot=true --base-href=http://localhost:3000 --delete-output-path=true --named-chunks=true --optimization=true --progress=true --verbose=true"
   },
   "private": true,
   "dependencies": {
