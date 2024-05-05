@@ -17,7 +17,7 @@ export class AppComponent {
   public appPages = [
     { title: 'Dashboard', url: '/dashboard', icon: 'mail' },
     { title: 'Materials', url: '/materials', icon: 'mail' },
-    { title: 'Types', url: '/types', icon: 'mail' },
+    { title: 'Category', url: '/category', icon: 'mail' },
 
 
     // { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
